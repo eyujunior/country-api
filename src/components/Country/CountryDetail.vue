@@ -10,13 +10,19 @@
     >
       Back
     </button>
-    <div class="flex items-start w-full py-8">
-      <img :src="selectedCountry.flag" class="w-2/5 mr-20" alt="flag" />
-      <div class="flex flex-col items-start justify-between">
+    <div
+      class="flex flex-col items-center w-full py-8 md:items-start md:flex-row"
+    >
+      <img
+        :src="selectedCountry.flag"
+        class="w-4/5 md:mr-20 md:w-2/5"
+        alt="flag"
+      />
+      <div class="flex flex-col items-center justify-between md:items-start">
         <h2 class="my-12 text-3xl font-bold uppercase">
           {{ selectedCountry.name }}
         </h2>
-        <div class="flex items-start">
+        <div class="flex flex-col items-start justify-center sm:flex-row">
           <div class="mb-2">
             <p
               class="mb-4 mr-32 text-lg font-bold capitalize"
@@ -83,7 +89,7 @@
             </p>
           </div>
         </div>
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col items-center justify-between sm:flex-row">
           <h2 class="mr-16 text-lg font-bold capitalize ">
             border countries
           </h2>
